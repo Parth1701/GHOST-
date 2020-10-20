@@ -44,7 +44,7 @@ function draw(){
   if(climbersGroup.isTouching(ghost)){
     ghost.velocityY=0;
   }
-  if(ghost.y>598){
+  if(ghost.y>598 || ghost.y<2){
     ghost.destroy();
     gameState="end";
   }
