@@ -31,7 +31,7 @@ function draw(){
   if(tower.y>400){
     tower.y=300;
   }
-  if(keyDown("up_arrow")){
+  if(keyWentDown("up_arrow")){
     ghost.velocityY=-5;
   }
    if(keyDown("left_arrow")){
@@ -56,6 +56,9 @@ function draw(){
     stroke("yellow");
     textSize(100);
     text("gameover",130,250);
+    if(keyDown("up_arrow")){
+      //reset();
+    }
   }
 }
 function spawnDoors(){
