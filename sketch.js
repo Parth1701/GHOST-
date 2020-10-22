@@ -55,7 +55,7 @@ function draw(){
     background("red");
     stroke("yellow");
     textSize(100);
-    text("gameover",130,250);
+    text("gameover",100,250);
     if(keyDown("up_arrow")){
       //reset();
     }
